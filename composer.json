@@ -1,0 +1,29 @@
+{
+  "name": "iartz/azure-blob-storage",
+  "autoload": {
+    "psr-4": {
+      "Azure\\BlobStorage\\": "src/Azure/BlobStorage"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "src/tests"
+    }
+  },
+  "authors": [
+    {
+      "name": "iArtz",
+      "email": "kanitphong@uservices-thailand.com"
+    }
+  ],
+  "require": {
+    "microsoft/azure-storage-blob": "^1.5",
+    "php": "^7.3"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^3.6",
+    "friendsofphp/php-cs-fixer": "^3.6",
+    "phpunit/phpunit": "^9.5",
+    "vlucas/phpdotenv": "^5.4"
+  }
+}
