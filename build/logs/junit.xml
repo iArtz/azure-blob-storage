@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="" tests="5" assertions="7" errors="0" warnings="0" failures="0" skipped="0" time="0.710619">
+    <testsuite name="Blob Test" tests="5" assertions="7" errors="0" warnings="0" failures="0" skipped="0" time="0.710619">
+      <testsuite name="Tests\BlobTest" file="/home/kanitphong/Projects/Dev/PHP/library/azure-blob-storage/tests/BlobTest.php" tests="5" assertions="7" errors="0" warnings="0" failures="0" skipped="0" time="0.710619">
+        <testcase name="testConnectBlobStorage" class="Tests\BlobTest" classname="Tests.BlobTest" file="/home/kanitphong/Projects/Dev/PHP/library/azure-blob-storage/tests/BlobTest.php" line="22" assertions="1" time="0.019724"/>
+        <testcase name="testSetContainer" class="Tests\BlobTest" classname="Tests.BlobTest" file="/home/kanitphong/Projects/Dev/PHP/library/azure-blob-storage/tests/BlobTest.php" line="28" assertions="1" time="0.000511"/>
+        <testcase name="testCreateBlobAndGetUrlEnpoint" class="Tests\BlobTest" classname="Tests.BlobTest" file="/home/kanitphong/Projects/Dev/PHP/library/azure-blob-storage/tests/BlobTest.php" line="41" assertions="2" time="0.338870"/>
+        <testcase name="testShowBlob" class="Tests\BlobTest" classname="Tests.BlobTest" file="/home/kanitphong/Projects/Dev/PHP/library/azure-blob-storage/tests/BlobTest.php" line="57" assertions="2" time="0.188364"/>
+        <testcase name="testDeletBlob" class="Tests\BlobTest" classname="Tests.BlobTest" file="/home/kanitphong/Projects/Dev/PHP/library/azure-blob-storage/tests/BlobTest.php" line="72" assertions="1" time="0.163151"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>
