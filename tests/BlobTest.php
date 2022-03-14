@@ -2,10 +2,10 @@
 
 namespace Tests;
 
-use Exception;
-use PHPUnit\Framework\TestCase;
 use Dotenv\Dotenv;
-use BlobStorage\Models\Blob;
+use Exception;
+use iArtz\BlobStorage\Models\Blob;
+use PHPUnit\Framework\TestCase;
 
 class BlobTest extends TestCase
 {
@@ -46,8 +46,8 @@ class BlobTest extends TestCase
             $this->blob->setContent(__DIR__ . '/test.jpg');
             $newBlob = $this->blob->new();
             $url = $this->blob->getUrl();
-            $this->assertEquals(200,  $newBlob->code);
-            $this->assertEquals(200,  $url->code);
+            $this->assertEquals(200, $newBlob->code);
+            $this->assertEquals(200, $url->code);
         } catch (Exception $e) {
             echo "Error code: " . $e->getCode() . " : " . $e->getMessage() . PHP_EOL;
             throw $e;

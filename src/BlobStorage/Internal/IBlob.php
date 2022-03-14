@@ -1,10 +1,10 @@
 <?php
 
-namespace BlobStorage\Internal;
+namespace iArtz\BlobStorage\Internal;
 
 interface IBlob
 {
-    public function new();
+    function new ();
     public function show();
     public function update();
     public function delete();

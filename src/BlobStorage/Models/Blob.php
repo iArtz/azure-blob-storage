@@ -1,11 +1,11 @@
 <?php
 
-namespace BlobStorage\Models;
+namespace iArtz\BlobStorage\Models;
 
+use iArtz\BlobStorage\Internal\BlobAttrs;
+use iArtz\BlobStorage\Internal\IBlob;
 use MicrosoftAzure\Storage\Blob\BlobRestProxy;
 use MicrosoftAzure\Storage\Common\Exceptions\ServiceException;
-use BlobStorage\Internal\BlobAttrs;
-use BlobStorage\Internal\IBlob;
 
 class Blob extends BlobAttrs implements IBlob
 {
@@ -21,11 +21,18 @@ class Blob extends BlobAttrs implements IBlob
         return $this->connectionStatus;
     }
 
-    public function new()
-    {
-        if (empty($this->content)) return false;
-        if (empty($this->blob_name)) return false;
-        if (empty($this->container)) return false;
+    function new () {
+        if (empty($this->content)) {
+            return false;
+        }
+
+        if (empty($this->blob_name)) {
+            return false;
+        }
+
+        if (empty($this->container)) {
+            return false;
+        }
 
         try {
             $this->blobClient->createBlockBlob($this->container, $this->blob_name, $this->content);
@@ -80,7 +87,7 @@ class Blob extends BlobAttrs implements IBlob
             $this->code = $e->getCode();
             $this->message = $e->getMessage();
         }
-        return (object)[
+        return (object) [
             "code" => $this->code,
             "message" => $this->message,
         ];

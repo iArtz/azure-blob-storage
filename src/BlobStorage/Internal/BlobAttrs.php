@@ -1,6 +1,6 @@
 <?php
 
-namespace BlobStorage\Internal;
+namespace iArtz\BlobStorage\Internal;
 
 abstract class BlobAttrs
 {

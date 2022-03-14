@@ -6,11 +6,11 @@ Azure blob storage helper CRUD
 
 This project using composer.
 
-`$ composer require iartz/php-package`
+`$ composer require iartz/azure-blob-storage`
 
 ## Usage
 
-Generate random string
+Conection upload list and delete blob on blob storage
 
 ```php
 <?php

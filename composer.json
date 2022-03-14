@@ -1,14 +1,14 @@
 {
   "name": "iartz/azure-blob-storage",
   "type": "library",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "license": "MIT",
   "scripts": {
     "test": "phpunit"
   },
   "autoload": {
     "psr-4": {
-      "BlobStorage\\": "src/BlobStorage"
+      "iArtz\\BlobStorage\\": "src/BlobStorage"
     }
   },
   "autoload-dev": {
@@ -25,7 +25,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "BlobStorage\\BlobStorageServiceProvider"
+        "iArtz\\BlobStorage\\BlobStorageServiceProvider"
       ]
     }
   },
